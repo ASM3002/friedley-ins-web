@@ -130,7 +130,7 @@ ul {
 .hamburger-icon {
     margin: auto 0;
     display: none;
-    z-index: 1;
+    z-index: 5;
 }
 
 .hamburger-icon div {
@@ -164,7 +164,7 @@ ul {
     position: absolute;
     top: 75px;
     left: 0;
-    height: calc(100vh - 100px);
+    height: calc(110vh - 100px);
     width: 100%;
 }
 
