@@ -18,6 +18,19 @@
         font-size: 20px;
     }
 }
+.input-container label {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--primary);
+}
+
+.input-container input,textarea {
+    padding: 1rem 2rem;
+        border-radius: 5px;
+        border: 2px solid var(--neutral);
+        resize: none;
+        font-size: 20px;
+}
+
 
 .contact-form button {
     align-self: flex-start;

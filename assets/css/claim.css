@@ -51,6 +51,17 @@ main {
     }
 }
 
+.emergency-box img {
+    width: 250px;
+}
+.emergency-box a {
+    color: var(--neutral);
+}
+.emergency-box a:hover {
+    color: var(--primary);
+}
+
+
 /*--------------------------------------------------------------
 # MOBILE ADAPTATION
 --------------------------------------------------------------*/

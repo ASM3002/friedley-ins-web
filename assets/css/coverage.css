@@ -19,6 +19,10 @@
         text-align: center;
     }
 }
+.coverage-options-container h2 {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
 
 .coverage-boxes {
     display: flex;
@@ -26,9 +30,14 @@
     justify-content: space-evenly;
     gap: 50px;
 }
+.coverage-boxes a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
 .coverage-box {
     display: flex;
-    width: 350px;
+    width: 400px;
     flex-direction: row;
     align-items: center;
     padding: 10px;
@@ -60,6 +69,29 @@
     }
 }
 
+.coverage-box img {
+    max-width: 100px;
+    max-height: 90px;
+}
+
+.coverage-box-details {
+    line-height: 0.5rem;
+        padding-left: 15px;
+}
+
+.coverage-box-details h3:after {
+    content: '\2192';
+    color: var(--neutral);
+    font-size: 25px;
+    padding-inline: 15px;
+}
+
+.coverage-box-details p {
+    color: var(--light-neutral);
+    font-family: 'Ubuntu', sans-serif;
+    max-width: 100%;
+}
+
 .coverage-box:hover {
     box-shadow: 0px 5px 10px var(--accent);
 }
@@ -83,6 +115,10 @@
     }
 }
 
+.intro-box p {
+    font-size: 1.3rem;
+    font-family: 'Ubuntu', sans-serif;
+}
 /*--------------------------------------------------------------
 # REUSABLE DIVIDER
 --------------------------------------------------------------*/
@@ -95,6 +131,11 @@
         height: auto;
         margin-inline: 25px;
     }
+}
+.divider-container img {
+    width: 200px;
+    height: auto;
+    margin-inline: 25px;
 }
 .divider-line {
     width: 100%;
@@ -118,8 +159,24 @@
 }
 
 
+/*--------------------------------------------------------------
+# SPECIFIC DETAILS
+--------------------------------------------------------------*/
+.specific-coverage-details {
+    padding-inline: 25px;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
+    height: 20vh;
+}
 
+/*--------------------------------------------------------------
+# FORM
+--------------------------------------------------------------*/
+.form-container {
+    margin: 100px 25px 25px 25px;
 
+}
 
 
 /*--------------------------------------------------------------
@@ -147,12 +204,20 @@
         color: var(--neutral);
     }
 }
+.all-coverages-section h5 {
+    color: var(--light-neutral);
+    font-weight: 400;
+}
 
 
 /*--------------------------------------------------------------
 # MOBILE ADAPTATION
 --------------------------------------------------------------*/
 @media only screen and (max-width: 1150px) {
+    /*Hero Coverages*/
+    .coverage-box {
+        width: 350px;
+    }
     /*Intro*/
     .intro-container {
         flex-direction: column;

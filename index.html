@@ -11,6 +11,7 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/navbar.css" rel="stylesheet">
     <link href="assets/css/coverage.css" rel="stylesheet">
+    <link href="assets/css/form.css" rel="stylesheet">
     <link href="assets/css/footer.css" rel="stylesheet">
 </head>
 <body>
@@ -50,37 +51,45 @@
             <h2>Explore what we cover</h2>
             <div class="coverage-boxes">
                 <!--Auto-->
-                <div class="coverage-box">
-                    <img src="/assets/img/coverage-icons/auto.jpg">
-                    <div class="coverage-box-details">
-                        <h3>Auto</h3>
-                        <p>Compare rates for best deal</p>
+                <a onclick="scrollToAnchor('nav-auto-anchor'); return false">
+                    <div class="coverage-box">
+                        <img src="/assets/img/coverage-icons/auto.jpg">
+                        <div class="coverage-box-details">
+                            <h3>Auto</h3>
+                            <p>Compare rates for best deal</p>
+                        </div>
                     </div>
-                </div>
+                </a>
                 <!--Personal-->
-                <div class="coverage-box">
-                    <img src="/assets/img/coverage-icons/personal.jpg">
-                    <div class="coverage-box-details">
-                        <h3>Personal</h3>
-                        <p>Bonds, Life, Healh & More</p>
+                <a onclick="scrollToAnchor('nav-personal-anchor'); return false">
+                    <div class="coverage-box">
+                        <img src="/assets/img/coverage-icons/personal.jpg">
+                        <div class="coverage-box-details">
+                            <h3>Personal</h3>
+                            <p>Bonds, Life, Healh & More</p>
+                        </div>
                     </div>
-                </div>
+                </a>
                 <!--Property-->
-                <div class="coverage-box">
-                    <img src="/assets/img/coverage-icons/property.jpg">
-                    <div class="coverage-box-details">
-                        <h3>Property</h3>
-                        <p>Home, Renters, Farms & More</p>
+                <a onclick="scrollToAnchor('nav-property-anchor'); return false">
+                    <div class="coverage-box">
+                        <img src="/assets/img/coverage-icons/property.jpg">
+                        <div class="coverage-box-details">
+                            <h3>Property</h3>
+                            <p>Home, Renters, Farms & More</p>
+                        </div>
                     </div>
-                </div>
+                </a>
                 <!--Recreational-->
-                <div class="coverage-box">
-                    <img src="/assets/img/coverage-icons/recreational.png">
-                    <div class="coverage-box-details">
-                        <h3>Recreational</h3>
-                        <p>Motorcycle, RV, Boat & More</p>
+                <a onclick="scrollToAnchor('nav-recreational-anchor'); return false">
+                    <div class="coverage-box">
+                        <img src="/assets/img/coverage-icons/recreational.png">
+                        <div class="coverage-box-details">
+                            <h3>Recreational</h3>
+                            <p>Motorcycle, RV, Boat & More</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
         <!--Intro-->
@@ -94,30 +103,72 @@
             </div>
         </div>
         <!--Auto Detail-->
-        <div class="divider-container">
+        <div id="nav-auto-anchor" class="divider-container">
             <div id="auto-div" class="divider-line"></div>
             <img src="/assets/img/coverage-icons/auto.jpg">
             <div id="auto-div" class="divider-line"></div>
         </div>
+        <div class="specific-coverage-details">
+            <h1 class="section-subtitle">Automotive Insurance</h1>
+            <p>Whether you're a daily commuter, a weekend adventurer, or a road trip enthusiast, our Independent Insurance Agency is your trusted companion on the journey. 
+                Rely on us to protect what matters most, mile after mile. 
+                Request a personalized quote today and drive confidently with our support in tailoring a plan for you!</p>
+        </div>
         <!--Personal Detail-->
-        <div class="divider-container">
+        <div id="nav-personal-anchor" class="divider-container">
             <div id="personal-div" class="divider-line"></div>
             <img src="/assets/img/coverage-icons/personal.jpg">
             <div id="personal-div" class="divider-line"></div>
         </div>
+        <div class="specific-coverage-details">
+            <h1 class="section-subtitle">Personal Insurance</h1>
+            <p>Whether you're securing your family's future, maintaining your health, or seeking financial stability through bonds, we are here to guide you. 
+                Request a personalized quote today and entrust us with safeguarding what matters most in your journey.</p>
+        </div>
         <!--Property Detail-->
-        <div class="divider-container">
+        <div id="nav-property-anchor" class="divider-container">
             <div id="property-div" class="divider-line"></div>
             <img src="/assets/img/coverage-icons/property-divider.jpg">
             <div id="property-div" class="divider-line"></div>
         </div>
+        <div class="specific-coverage-details">
+            <h1 class="section-subtitle">Property Insurance</h1>
+            <p>Embark on a journey of total property protection to safeguard the spaces you call home.
+                Whether they're adorned with charming barns or nestled in the heart of bustling neighborhoods, our tailored property insurance solutions are your key to worry-free living. 
+                
+            </p>
+        </div>
         <!--Recreational Detail-->
-        <div class="divider-container">
+        <div id="nav-recreational-anchor" class="divider-container">
             <div id="recreational-div" class="divider-line"></div>
             <img src="/assets/img/coverage-icons/recreational.png">
             <div id="recreational-div" class="divider-line"></div>
         </div>
-
+        <div class="specific-coverage-details">
+            <h1 class="section-subtitle">Recreational Insurance</h1>
+            <p>Whether you're securing your family's future, maintaining your health, or seeking financial stability through bonds, we are here to guide you. 
+                Request a personalized quote today and entrust us with safeguarding what matters most in your journey.</p>
+        </div>
+        <!--Form-->
+        <div class="form-container">
+            <h1 class="section-title">Leave your info, we'll call you</h1>
+            <form id="contactForm" class="contact-form">
+                <div class="input-container">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+                <div class="input-container">
+                    <label for="phone">Phone</label>
+                    <input id="phone" name="phone" required></textarea>
+                </div>
+                <div class="input-container">
+                    <label for="message">Request a quote? Have a question?</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <div class="contact-form-alert" role="alert">Submitted successfully, we will get back soon!</div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
         <!--All Coverages-->
         <div class="all-coverages-container">
             <h2 class="section-subtitle">What we cover</h2>
@@ -175,5 +226,6 @@
     <!-- End Footer -->
     <script src="/assets/js/navbar.js"></script>
     <script src="/assets/js/scroll-monitor.js"></script>
+    <script src="/assets/js/contact-form.js"></script>
 </body>
 </html>

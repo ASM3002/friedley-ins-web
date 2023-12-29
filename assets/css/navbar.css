@@ -12,6 +12,9 @@ ul {
         display: inline;
     }
 }
+.nav-header li {
+    display: inline;
+}
 
 
 .page-nav-link {

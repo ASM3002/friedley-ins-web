@@ -23,6 +23,7 @@ html:not([data-scroll='0']) .to-top-arrow {
     position: relative;
     display: block;
     align-items: center;
+    color: var(--neutral);
 }
 .footer-partners {
     display: flex;
@@ -32,6 +33,9 @@ html:not([data-scroll='0']) .to-top-arrow {
     img {
         padding-inline: 25px;
     }
+}
+.footer-partners img {
+    padding-inline: 25px;
 }
 
 .footer-bottom {
@@ -46,6 +50,14 @@ html:not([data-scroll='0']) .to-top-arrow {
         color: var(--primary);
         padding-inline: 5px;
     }
+}
+.footer-bottom p {
+    padding-inline: 25px;
+    color: var(--neutral);
+}
+.footer-bottom span {
+    color: var(--primary);
+    padding-inline: 5px;
 }
 
 .contact-information {

@@ -32,3 +32,12 @@ const debounce = (fn) => {
 function scrollToTop(){
     window.scrollTo({top: 0, behavior: 'smooth'});
 }
+
+function scrollToAnchor(anchor){
+  var endpoint = document.getElementById(anchor);
+  endpoint.scrollIntoView({block:"start", behavior:"smooth"});
+  const margin = 20;
+  setTimeout(() => {
+    window.scroll({top:window.scrollY - margin,left:0,behavior:"smooth"});
+  }, 700);
+}

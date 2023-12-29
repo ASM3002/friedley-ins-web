@@ -33,6 +33,12 @@
         color: var(--primary);
     }
 }
+.about-details a {
+    color: var(--neutral);
+}
+.about-details a:hover {
+    color: var(--primary);
+}
 
 .img-overlay {
     position: absolute;
@@ -62,10 +68,17 @@
         font-style: italic;
     }
 }
+.testimonial-box h3 {
+    font-style: italic;
+}
+
 .testimonial-stars {
     img {
         width: 25px;
     }
+}
+.testimonial-stars img {
+    width: 25px;
 }
 
 
