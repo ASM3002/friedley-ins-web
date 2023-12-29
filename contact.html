@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friedley & Co</title>
+    <link rel="icon" href="/assets/img/icon.png" type="image/png">
+
+    <!--CASCADING STYLE SHEETS-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/navbar.css" rel="stylesheet">
+    <link href="assets/css/contact.css" rel="stylesheet">
+    <link href="assets/css/form.css" rel="stylesheet">
+    <link href="assets/css/footer.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <header class="nav-header">
+        <a class="nav-name" href="index.html">
+            <h1>FRIEDLEY & CO Agency, Inc.</h1>
+        </a>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="company.html">Company</a></li>
+                <li><a class="nav-link" href="index.html">Coverage</a></li>
+                <li><a class="page-nav-link" href="contact.html">Contact</a>
+                <li><a class="nav-claim-button" href="claim.html">File Claim</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a class="nav-link" href="company.html">Company</a></li>
+                <li><a class="nav-link" href="index.html">Coverage</a></li>
+                <li><a class="nav-link" href="contact.html">Contact</a></li>
+                <li><a class="nav-claim-button" href="claim.html">File Claim</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <main>
+        <!-- Agents Section -->
+        <div class="agents-container">
+            <h3 class="section-subtitle"> Proud to be serving the local community over 70 years</h3>
+            <h1 class="section-title">Find an agent, Call Today!</h1>
+            <div class="agent-container">
+                <div class="agent-box">
+                    <img class="agent-image" src="/assets/img/agents/blythe-friedley.jpg">
+                    <h2>Blythe Friedley</h2>
+                    <h3>President</h3>
+                    <p>
+                        Blythe has served as active president of Friedley Insurance since 1996 following in the steps of
+                        her father, Rowland W. Friedley.
+                    </p>
+                    <p>419-492-2392</p>
+                    <p>blythesemail@friedleyins.com</p>
+                </div>
+                <div class="agent-box">
+                    <img class="agent-image" src="/assets/img/agents/todd-mcdougal.jpg">
+                    <h2>Todd McDougal</h2>
+                    <h3>Vice-President</h3>
+                    <p>
+                        Todd has served as VP since 2002 when he joined the team.
+                    </p>
+                    <p>419-492-2392</p>
+                    <p>toddsemail@friedleyins.com</p>
+                </div>
+            </div>
+        </div>
+        <!-- Contact Information / Location-->
+        <div class="outreach-container">
+            <div class="outreach-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3012.866485904033!2d-82.85694062373095!3d40.962503622241876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883983c893ece79d%3A0xe18f8ee2ad407e14!2s118%20W%20Mansfield%20St%2C%20New%20Washington%2C%20OH%2044854!5e0!3m2!1sen!2sus!4v1703253314174!5m2!1sen!2sus"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="outreach-information">
+                <h1>Hours</h1>
+                <h3>Mon - Fri: 8 AM - 5 PM</h3>
+                <h3>Sat - Sun: Closed</h3>
+                <h2>24 Hour Claim Reporting!</h2>
+            </div>
+        </div>
+        <!-- Contact Form-->
+        <div class="contact-form-container">
+            <h1 class="section-title">Here to keep you covered</h1>
+            <form id="contactForm" class="contact-form">
+                <div class="input-container">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+                <div class="input-container">
+                    <label for="phone">Phone</label>
+                    <input id="phone" name="phone" required></textarea>
+                </div>
+                <div class="input-container">
+                    <label for="message">Request a quote? Have a question?</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="contact-form-alert" role="alert">Submitted successfully, we will get back soon!</div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        
+    </main>
+
+    <!-- ======== Footer ======== -->
+    <a href="#" onclick="scrollToTop();return false"><img class="to-top-arrow" src="/assets/img/chevron-up.png"></a>
+    <footer class="footer-container">
+        <div class="footer-partners">
+            <img src="/assets/img/partners/trusted-choice.png">
+            <img src="/assets/img/partners/auto-owners-insurance.png">
+            <img src="/assets/img/partners/ohio-mutual.png">
+            <img src="/assets/img/partners/progressive.png">
+        </div>
+        <div class="footer-bottom">
+            <div class="contact-information">
+                <p>Office:<span>419-492-2392</span></p>
+                <p>Fax:<span>419-492-2419</span></p>
+                <p><span>friedley@friedleyins.com</span></p>
+            </div>
+            <p class="mobile-phone">Office:<span>419-492-2392</span></p>
+            <p>Copyright 2023 Aiden McDougal</p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="/assets/js/navbar.js"></script>
+    <script src="/assets/js/scroll-monitor.js"></script>
+</body>
+
+</html>

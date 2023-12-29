@@ -3,9 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friedley & Co</title>
+    <link rel="icon" href="/assets/img/icon.png" type="image/png">
+
+    <!--CASCADING STYLE SHEETS-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/navbar.css" rel="stylesheet">
+    <link href="assets/css/coverage.css" rel="stylesheet">
+    <link href="assets/css/footer.css" rel="stylesheet">
 </head>
 <body>
-    <h1>test</h1>
+    <!-- ======= Header ======= -->
+    <header class="nav-header">
+        <a class="nav-name" href="index.html"><h1>FRIEDLEY & CO Agency, Inc.</h1></a>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="company.html">Company</a></li>
+                <li><a class="page-nav-link" href="index.html">Coverage</a></li>
+                <li><a class="nav-link" href="contact.html">Contact</a>
+                <li><a class="nav-claim-button" href="claim.html">File Claim</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a class="nav-link" href="company.html">Company</a></li>
+                <li><a class="nav-link" href="index.html">Coverage</a></li>
+                <li><a class="nav-link" href="contact.html">Contact</a></li>
+                <li><a class="nav-claim-button" href="claim.html">File Claim</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <main>
+        <!--Hero Header-->
+        <div class="coverage-hero-container">
+            <h3 class="section-subtitle">Proud to be serving the local community over 70 years</h3>
+            <h1 class="section-title">Welcome to Friedley Insurance</h1>
+        </div>
+        <!--Hero Coverages-->
+        <div class="coverage-options-container">
+            <h2>Explore what we cover</h2>
+            <div class="coverage-boxes">
+                <!--Auto-->
+                <div class="coverage-box">
+                    <img src="/assets/img/coverage-icons/auto.jpg">
+                    <div class="coverage-box-details">
+                        <h3>Auto</h3>
+                        <p>Compare rates for best deal</p>
+                    </div>
+                </div>
+                <!--Personal-->
+                <div class="coverage-box">
+                    <img src="/assets/img/coverage-icons/personal.jpg">
+                    <div class="coverage-box-details">
+                        <h3>Personal</h3>
+                        <p>Bonds, Life, Healh & More</p>
+                    </div>
+                </div>
+                <!--Property-->
+                <div class="coverage-box">
+                    <img src="/assets/img/coverage-icons/property.jpg">
+                    <div class="coverage-box-details">
+                        <h3>Property</h3>
+                        <p>Home, Renters, Farms & More</p>
+                    </div>
+                </div>
+                <!--Recreational-->
+                <div class="coverage-box">
+                    <img src="/assets/img/coverage-icons/recreational.png">
+                    <div class="coverage-box-details">
+                        <h3>Recreational</h3>
+                        <p>Motorcycle, RV, Boat & More</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Intro-->
+        <div class="intro-container">
+            <img src="/assets/img/backgrounds/family.png">
+            <div class="intro-box">
+                <h1>An independent insurance agency for all your needs </h1>
+                <p>At Friedley and Co, we've built our business around understanding your needs and what is important to protect.
+                    That's why we do our best to find you the best coverage for you personal situation.
+                </p>
+            </div>
+        </div>
+        <!--Auto Detail-->
+        <div class="divider-container">
+            <div id="auto-div" class="divider-line"></div>
+            <img src="/assets/img/coverage-icons/auto.jpg">
+            <div id="auto-div" class="divider-line"></div>
+        </div>
+        <!--Personal Detail-->
+        <div class="divider-container">
+            <div id="personal-div" class="divider-line"></div>
+            <img src="/assets/img/coverage-icons/personal.jpg">
+            <div id="personal-div" class="divider-line"></div>
+        </div>
+        <!--Property Detail-->
+        <div class="divider-container">
+            <div id="property-div" class="divider-line"></div>
+            <img src="/assets/img/coverage-icons/property-divider.jpg">
+            <div id="property-div" class="divider-line"></div>
+        </div>
+        <!--Recreational Detail-->
+        <div class="divider-container">
+            <div id="recreational-div" class="divider-line"></div>
+            <img src="/assets/img/coverage-icons/recreational.png">
+            <div id="recreational-div" class="divider-line"></div>
+        </div>
+
+        <!--All Coverages-->
+        <div class="all-coverages-container">
+            <h2 class="section-subtitle">What we cover</h2>
+            <div class="all-coverages-rows">
+                <div class="all-coverages-section">
+                    <h5>ATV/UTV</h5>
+                    <h5>Apartment</h5>
+                    <h5>Auto</h5>
+                    <h5>Boat</h5>
+                    <h5>Bonds</h5>
+                    <h5>Businesses</h5>
+                    <h5>Campers/RV/Trailer</h5>
+                </div>
+                <div class="all-coverages-section">
+                    <h5>Condo</h5>
+                    <h5>Event</h5>
+                    <h5>Farm</h5>
+                    <h5>Flood</h5>
+                    <h5>Homeowners</h5>
+                    <h5>Life</h5>
+                    <h5>Health</h5>
+                </div>
+                <div class="all-coverages-section">
+                    <h5>Mobile Home</h5>
+                    <h5>Motorcycle</h5>
+                    <h5>Recreational Vehicle</h5>
+                    <h5>Rental Property</h5>
+                    <h5>Renters</h5>
+                    <h5>Snowmobile</h5>
+                    <h5>Waverunner</h5>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ======== Footer ======== -->
+    <a href="#" onclick="scrollToTop();return false"><img class="to-top-arrow" src="/assets/img/chevron-up.png"></a>
+    <footer class="footer-container">
+        <div class="footer-partners">
+            <img src="/assets/img/partners/trusted-choice.png">
+            <img src="/assets/img/partners/auto-owners-insurance.png">
+            <img src="/assets/img/partners/ohio-mutual.png">
+            <img src="/assets/img/partners/progressive.png">
+        </div>
+        <div class="footer-bottom">
+            <div class="contact-information">
+                <p>Office:<span>419-492-2392</span></p>
+                <p>Fax:<span>419-492-2419</span></p>
+                <p><span>friedley@friedleyins.com</span></p>
+            </div>
+            <p class="mobile-phone">Office:<span>419-492-2392</span></p>
+            <p>Copyright 2023 Aiden McDougal</p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="/assets/js/navbar.js"></script>
+    <script src="/assets/js/scroll-monitor.js"></script>
 </body>
 </html>

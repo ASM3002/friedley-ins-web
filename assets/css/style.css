@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Roboto:wght@400;500&family=Ubuntu&display=swap');
+
+* {
+    font-family: 'Arvo', serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: auto;
+    height: 100%;
+    max-width: 1500px;
+    margin: 0 auto !important; 
+	float: none !important; 
+}
+
+:root {
+    --primary: #025dc4;
+    --accent: #8eb0f5;
+    --alternate: #17c204;
+    --white: #ffffff; 
+    --neutral: #343434;
+    --light-neutral: #bbbbbb;
+}
+
+main {
+    width: 100%;
+    color: var(--neutral);
+}
+.section-subtitle {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    padding-inline: 25px;
+}
+.section-title {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    padding-inline: 25px;
+}
+
+@media only screen and (min-width: 1500px) {
+    body {
+        box-shadow: 0px 0px 25px var(--neutral);
+    }
+}
