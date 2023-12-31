@@ -27,7 +27,7 @@
 
 .agent-image {
     height: 150px;
-    aspect-ratio: 1;
+    width: 150px;
     border-radius: 50%;
 }
 
